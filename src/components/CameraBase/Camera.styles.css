@@ -1,0 +1,83 @@
+.camera-container {      
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;    
+    overflow: hidden;  
+    
+  }
+    
+    .camera-button {
+        position: fixed;
+        bottom: 5%;
+        left: calc(50% - 30px); 
+        height: 60px;
+        line-height: 80px;  
+        width: 60px;  
+        font-size: 2em;
+        font-weight: bold;
+        border-radius: 50%;
+        background-color: #ffffff66;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .capture-img {                
+        /* object-fit: contain;     
+        width: 100vw;
+        margin-left: 15vw;   
+        margin-right: 15vw;   
+        height: 100vh;  
+        position: relative;       */
+      }
+
+      #web-cam {
+        position: relative;
+        width: auto;
+        height: 100vh;
+      }      
+
+      .rectangle {        
+        position: fixed;
+        width: 80%;        
+        height: 80vh;
+        top: 5%;
+        left: 10%;
+        border: 5px solid yellow;        
+      }
+
+      .camera-retake-button {           
+        border-radius: var(--global-border-radius);
+        border: var(--global-border);            
+        height: 40px;
+        width: 80px;  
+        font-size: 1rem;        
+        background-color:white;
+        color: black;
+        text-align: center;
+        cursor: pointer;
+        z-index: 1;
+      }
+
+      .camera-confirm-button {           
+        border-radius: var(--global-border-radius);
+        border: var(--global-border);        
+        font-size: 1rem;  
+        height: 40px;
+        width: 120px;               
+        background-color:var(--global-primary-color);
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        margin-left: 10px;
+        z-index: 1;
+      }
+
+      .camera-buttons-div {
+        position: absolute;
+        bottom: 15%;
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+      }
